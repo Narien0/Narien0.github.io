@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+.inline-block-child {
+  border-radius: 10px;
+  display: inline-block; /*https://stackoverflow.com/questions/4938716/align-div-elements-side-by-side*/
+  padding: 10px;
+  margin: 5px;
+}
+
+#search_area{
+  display: none;
+}
+
+.dead{
+  color: white;
+  background-color: #202020;
+}
+
+.alive{
+  color: black;
+  background-color: #c0c0c0;
+}
+
+.result_divs:hover{
+  background-color: darkgray;
+}
+
+.person{
+  border-radius: 10px;
+  padding: 10px;
+  margin: 5px;
+  cursor: grab;
+  /*background-color: #65ab4c;*/
+}
+
+#todo-list {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.todo-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+.todo-item.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+.delete-btn {
+    margin-left: auto;
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#add-todo {
+    display: flex;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+}
+#new-todo {
+    flex-grow: 1;
+    padding: 8px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.add-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}

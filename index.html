@@ -1,1 +1,41 @@
-Testing initialization
+<!DOCTYPE html>
+<html lang="en-US">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Death list test page</title>
+    <link href="styles/minimal-table.css" rel="stylesheet" type="text/css">
+    <!--script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script> htmx library import -->
+    <script type="scripts/htmx.min.js"></script>
+  </head>
+  <body>
+    <h1>Death list :D</h1>
+    <!--<img src="images/bear_hello.png" alt="A photograph of a bear that has its paw raised as if it was saying hello."/>-->
+    <p>The people you've selected :)</p>
+    <!--a title="Department of Defense. Department of the Navy. Naval Photographic Center, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:JimmyCarterPortrait2.jpg"><img width="256" alt="Jimmy Carter&#039;s face" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/JimmyCarterPortrait2.jpg/256px-JimmyCarterPortrait2.jpg?20190802230716"></a-->
+    
+    
+    <div id="innerdiv"></div>
+
+
+    <button id="add-btn" onclick="toggleSearchArea()">
+        Add person
+    </button>
+
+    <div id="search_area" style.display="none">
+    <h2>Search Section (._. )</h2>
+    <input type="text" name="Search" id="search_box">
+    <button id="add-btn" onclick="searchPerson()">
+        Search person
+    </button>
+    </div>
+
+    <div id="search_results"></div>
+
+    <script src="scripts/md5.min.js"></script>
+    <script src="scripts/main.js"></script> <!-- remember to put the script AFTER whatever you want to modify -->
+
+  </body>
+</html>
