@@ -1,41 +1,46 @@
+<!-- Index.html  -->
 <!DOCTYPE html>
-<html lang="en-US">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
-    <title>Death list test page</title>
-    <link href="styles/minimal-table.css" rel="stylesheet" type="text/css">
-    <!--script src="https://unpkg.com/htmx.org@2.0.3" integrity="sha384-0895/pl2MU10Hqc6jd4RvrthNlDiE9U1tWmX7WRESftEDRosgxNsQG/Ze9YMRzHq" crossorigin="anonymous"></script> htmx library import -->
-    <script type="scripts/htmx.min.js"></script>
-  </head>
-  <body>
-    <h1>Death list :D</h1>
-    <!--<img src="images/bear_hello.png" alt="A photograph of a bear that has its paw raised as if it was saying hello."/>-->
-    <p>The people you've selected :)</p>
-    <!--a title="Department of Defense. Department of the Navy. Naval Photographic Center, Public domain, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:JimmyCarterPortrait2.jpg"><img width="256" alt="Jimmy Carter&#039;s face" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/JimmyCarterPortrait2.jpg/256px-JimmyCarterPortrait2.jpg?20190802230716"></a-->
-    
-    
-    <div id="innerdiv"></div>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" 
+          content="width=device-width,
+                   initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/minimal-table.css" />
+    <title>Drag and Drop Sortable List</title>
+</head>
 
-    <button id="add-btn" onclick="toggleSearchArea()">
-        Add person
-    </button>
+<body>
+<div id="container">
+  <p>Toggle your browser device toolbar and change device to any mobile or tablet from your browser inspect.</p>
+  <div id="box"></div>
 
-    <div id="search_area" style.display="none">
-    <h2>Search Section (._. )</h2>
-    <input type="text" name="Search" id="search_box">
-    <button id="add-btn" onclick="searchPerson()">
-        Search person
-    </button>
-    </div>
+  <div class="sortable-list">
+        <div id="sortabla">
+            <div id="uno" class="element" draggable="true"><h4>Item 1</h4></div>
+            <div id="dos" class="element" draggable="true"><h4>Item 2</h4></div>
+            <div id="tres" class="element" draggable="true"><h4>Item 3</h4></div>
+        </div>
+  </div>
 
-    <div id="search_results"></div>
+  <div class="sortable-grid">
+      <div id="sortably" class="wrapper">
+        <div class="one element" draggable="true">One</div>
+        <div class="two element" draggable="true">Two</div>
+        <div class="three element" draggable="true">Three</div>
+        <div class="four element" draggable="true">Four</div>
+        <div class="five element" draggable="true">Five</div>
+        <div class="six element" draggable="true">Six</div>
+        <div class="seven element" draggable="true">Seven</div>
+        <div class="eight element" draggable="true">Eight</div>
+        <div class="nine element" draggable="true">Nine</div>
+        <div></div>
+        <div class="ten element" draggable="true">Ten</div>
+      </div>
+  </div>
 
-    <script src="scripts/md5.min.js"></script>
-    <script src="scripts/main.js"></script> <!-- remember to put the script AFTER whatever you want to modify -->
+<script src="scripts/main.js"></script>
+</body>
 
-  </body>
 </html>
