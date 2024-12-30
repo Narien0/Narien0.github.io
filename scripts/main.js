@@ -24,6 +24,7 @@ window.onload = function() {
     var touchLocation = e.targetTouches[0];
     var drg_box = findDraggableParent(e.target);
     dragged_item = drg_box;
+    console.log(drg_box);
     if(drg_box.draggable){
       try{
         console.log(drg_box.draggable,drg_box.className);
@@ -134,7 +135,7 @@ window.onload = function() {
 
 function findDraggableParent(node){
   let parent = node.parentNode;
-  if (node.draggable || !node.draggable) { return node; }
+  if (node.draggable) { return node; }
   else if ( parent.id === "sortably" || parent.localName==="body" ) { return null; }
   else { return findDraggableParent(parent); }
 }
